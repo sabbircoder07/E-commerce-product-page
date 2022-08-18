@@ -95,7 +95,7 @@ body {
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-  height: 8rem;
+  height: 10rem;
   margin-bottom: 0rem;
   border-bottom: 1px solid hsl(220, 14%, 75%);
 }
@@ -172,14 +172,14 @@ body {
 }
 
 .main {
-  margin: 8rem 0;
+  margin: 10rem 0;
   padding: 0 5rem;
 }
 
 .product-details-section {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  column-gap: 10rem;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 15rem;
 }
 
 .product-details-image {
@@ -192,7 +192,7 @@ body {
 .main-viewed-image {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 11px;
 }
 
 .list-of-image {
@@ -204,7 +204,7 @@ body {
 .image-list {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 11px;
 }
 
 .product-dtails-informations {
@@ -212,7 +212,7 @@ body {
 }
 
 .company-label {
-  font: size 1.6rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
@@ -220,9 +220,9 @@ body {
 }
 
 .product-title {
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   font-weight: 700;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.8rem;
   color: hsl(220, 13%, 13%);
 }
 
@@ -231,7 +231,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: hsl(219, 9%, 45%);
-  margin-bottom: 2rem;
+  margin-bottom: 2.8rem;
 }
 
 .product-price-details {
@@ -260,12 +260,12 @@ body {
   font-weight: 700;
   color: hsl(220, 14%, 75%);
   text-decoration: line-through;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.8rem;
 }
 
 .call-to-action-form input,
 .call-to-action-form select {
-  width: 12rem;
+  width: 15rem;
   padding: 1.2rem;
   font-size: 1.6rem;
   color: hsl(220, 13%, 13%);
@@ -286,7 +286,7 @@ body {
 .plus-icon {
   position: absolute;
   padding: 0 0 0 1.2rem;
-  left: 8rem;
+  left: 11rem;
   cursor: pointer;
 }
 
@@ -307,7 +307,7 @@ body {
 .btn-add-to-cart {
   font-size: 2rem;
   border: none;
-  padding: 1.2rem 5rem 1.2rem 5rem;
+  padding: 1.2rem 5.2rem 1.2rem 5.2rem;
   color: hsl(0, 0%, 100%);
   background-color: hsl(26, 100%, 55%);
   border-radius: 11px;
