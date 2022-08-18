@@ -1,0 +1,315 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very vark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  color: hsl(220, 14%, 75%);
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  top: 5.2rem;
+  left: 0;
+  background-color: hsl(26, 100%, 55%);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 144rem;
+  min-height: 100vh;
+  padding: 0 15rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding-right: 4rem;
+}
+
+.nav-bar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  height: 8rem;
+  margin-bottom: 0rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.nav-header {
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.nav-link {
+  color: hsl(220, 14%, 75%) !important;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.mobile-nav-menu-icon {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.shopping-cart-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 3rem;
+}
+.btn-shopping-cart {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.shopping-cart {
+  height: 2rem;
+  width: 2rem;
+}
+.user-img {
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-img:hover {
+  box-shadow: 0px 0px 0px 1px hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+
+.main {
+  margin: 8rem 0;
+  padding: 0 5rem;
+}
+
+.product-details-section {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  column-gap: 10rem;
+}
+
+.product-details-image {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.main-viewed-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.list-of-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.image-list {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-dtails-informations {
+  margin-top: 5rem;
+}
+
+.company-label {
+  font: size 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  color: hsl(26, 100%, 55%);
+}
+
+.product-title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+  color: hsl(220, 13%, 13%);
+}
+
+.product-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: hsl(219, 9%, 45%);
+  margin-bottom: 2rem;
+}
+
+.product-price-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.main-price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discount {
+  font-size: 1.8rem;
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  padding: 2px 1.2rem;
+  border-radius: 5px;
+}
+
+.orginal-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+  margin-bottom: 2.4rem;
+}
+
+.call-to-action-form input,
+.call-to-action-form select {
+  width: 12rem;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  border: none;
+  background-color: hsl(223, 64%, 98%);
+  text-align: center;
+  border-radius: 11px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.plus-icon {
+  position: absolute;
+  padding: 0 0 0 1.2rem;
+  left: 8rem;
+  cursor: pointer;
+}
+
+.minus-icon {
+  position: absolute;
+  padding: 0 0 0 1.2rem;
+  left: 0;
+  cursor: pointer;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-add-to-cart {
+  font-size: 2rem;
+  border: none;
+  padding: 1.2rem 5rem 1.2rem 5rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 11px;
+  cursor: pointer;
+}
